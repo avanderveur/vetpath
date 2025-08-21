@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Transition • Transition Skill Builder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1 class="page-title">Career Transition Tasks</h1>
+
+    <div class="progress"><div id="progressFill" class="progress__fill"></div></div>
+    <p id="progressPct" class="progress__text">0% complete</p>
+
+    <ul id="tasks" class="tasks" data-key="career">
+      <li><label><input type="checkbox" data-id="c1"> Translate your MOS to 3 civilian roles using O*NET.</label></li>
+      <li><label><input type="checkbox" data-id="c2"> Draft 3 resume bullets using the XYZ method.</label></li>
+      <li><label><input type="checkbox" data-id="c3"> Identify 5 jobs to apply for this week.</label></li>
+    </ul>
+
+    <div class="action-row">
+      <button id="resetProgress" class="btn btn-primary" type="button">Start Over</button>
+      <button id="printPlan" class="btn" type="button">Print / Save as PDF</button>
+      <a class="btn" href="index.html">Back to Categories</a>
+    </div>
+
+    <section class="resources">
+      <h2 class="resources-title">Helpful Resources</h2>
+      <div class="box">
+        <p><a href="https://www.onetonline.org" target="_blank" rel="noopener">O*NET</a> — Map military skills to civilian jobs.</p>
+        <p><a href="https://www.linkedin.com/learning" target="_blank" rel="noopener">LinkedIn Learning</a> — Quick upskilling courses.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>

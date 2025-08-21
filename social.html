@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Social Integration • Transition Skill Builder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1 class="page-title">Social Integration Tasks</h1>
+
+    <div class="progress"><div id="progressFill" class="progress__fill"></div></div>
+    <p id="progressPct" class="progress__text">0% complete</p>
+
+    <ul id="tasks" class="tasks" data-key="social">
+      <li><label><input type="checkbox" data-id="s1"> Join one veteran group (online or local).</label></li>
+      <li><label><input type="checkbox" data-id="s2"> Text or call one supportive person.</label></li>
+      <li><label><input type="checkbox" data-id="s3"> Plan one free local activity this week.</label></li>
+    </ul>
+
+    <div class="action-row">
+      <button id="resetProgress" class="btn btn-primary" type="button">Start Over</button>
+      <button id="printPlan" class="btn" type="button">Print / Save as PDF</button>
+      <a class="btn" href="index.html">Back to Categories</a>
+    </div>
+
+    <section class="resources">
+      <h2 class="resources-title">Helpful Resources</h2>
+      <div class="box">
+        <p><a href="https://www.meetup.com/topics/veterans/" target="_blank" rel="noopener">Meetup</a> — Find veteran/community events.</p>
+        <p><a href="https://www.teamrwb.org/" target="_blank" rel="noopener">Team RWB</a> — Local veteran fitness/community.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>

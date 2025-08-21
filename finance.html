@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Financial Literacy • Transition Skill Builder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1 class="page-title">Financial Literacy Tasks</h1>
+
+    <div class="progress"><div id="progressFill" class="progress__fill"></div></div>
+    <p id="progressPct" class="progress__text">0% complete</p>
+
+    <ul id="tasks" class="tasks" data-key="finance">
+      <li><label><input type="checkbox" data-id="f1"> List all monthly bills + due dates.</label></li>
+      <li><label><input type="checkbox" data-id="f2"> Open a high-yield savings account (or verify your rate).</label></li>
+      <li><label><input type="checkbox" data-id="f3"> Set $25 auto-transfer to emergency fund.</label></li>
+    </ul>
+
+    <div class="action-row">
+      <button id="resetProgress" class="btn btn-primary" type="button">Start Over</button>
+      <button id="printPlan" class="btn" type="button">Print / Save as PDF</button>
+      <a class="btn" href="index.html">Back to Categories</a>
+    </div>
+
+    <section class="resources">
+      <h2 class="resources-title">Helpful Resources</h2>
+      <div class="box">
+        <p><a href="https://www.consumerfinance.gov" target="_blank" rel="noopener">CFPB</a> — Money tools and guides.</p>
+        <p><a href="https://www.annualcreditreport.com" target="_blank" rel="noopener">Annual Credit Report</a> — Free credit reports.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>

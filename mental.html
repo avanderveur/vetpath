@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mental Health • Transition Skill Builder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1 class="page-title">Mental Health Tasks</h1>
+
+    <div class="progress"><div id="progressFill" class="progress__fill"></div></div>
+    <p id="progressPct" class="progress__text">0% complete</p>
+
+    <ul id="tasks" class="tasks" data-key="mental">
+      <li><label><input type="checkbox" data-id="mh1"> Practice a 3-minute deep breathing exercise.</label></li>
+      <li><label><input type="checkbox" data-id="mh2"> Write down three things you're grateful for.</label></li>
+      <li><label><input type="checkbox" data-id="mh3"> Take a 10-minute walk (or stretch indoors).</label></li>
+    </ul>
+
+    <div class="action-row">
+      <button id="resetProgress" class="btn btn-primary" type="button">Start Over</button>
+      <button id="printPlan" class="btn" type="button">Print / Save as PDF</button>
+      <a class="btn" href="index.html">Back to Categories</a>
+    </div>
+
+    <section class="resources">
+      <h2 class="resources-title">Helpful Resources</h2>
+      <div class="box">
+        <p><a href="https://www.mentalhealth.va.gov" target="_blank" rel="noopener">VA Mental Health</a> — Official services and crisis resources.</p>
+        <p><a href="https://www.headspace.com" target="_blank" rel="noopener">Headspace</a> — Guided meditations and mindfulness.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/tasks.js"></script>
+</body>
+</html>
